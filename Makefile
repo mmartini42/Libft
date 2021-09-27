@@ -1,7 +1,7 @@
 NAME = libft.a
 
 #find . -name "*.c" | tr '\n' ' '
-SRCS = ./ft_atoi.c ./ft_memset.c ./ft_strlen.c ./ft_strlcat.c ./ft_bzero.c ./ft_memcpy.c ./ft_memccpy.c
+SRCS = ./ft_atoi.c ./ft_memset.c ./ft_strlen.c ./ft_strlcat.c ./ft_bzero.c ./ft_memcpy.c ./ft_memccpy.c ./ft_memmove.c
 
 CFLAGS = -Wall -Werror -Wextra
 
