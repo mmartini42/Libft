@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/27 22:07:14 by matmarti         ###   ########.fr       */
+/*   Created: 2021/09/27 22:01:56 by matmarti          #+#    #+#             */
+/*   Updated: 2021/09/27 22:07:10 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	size_t			i;
+	unsigned char	*str;
+	unsigned char	*dest;
 
-int		ft_atoi(const char *str);
-void	*ft_memset(void *b, int c, size_t len);
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(const char *str);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-
-#endif
+	i = 0;
+	str = (unsigned char *)src;
+	dest = (unsigned char *)dst;
+	while (i < n)
+	{
+		dest[i] = str[i];
+		i++;
+	}
+	return (dst);
+}
