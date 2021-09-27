@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/27 19:36:16 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/09/27 20:31:57 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <unistd.h>
 
-int	ft_atoi(const char *str);
+int		ft_atoi(const char *str);
+void	*ft_memset(void *b, int c, size_t len);
 
 #endif
