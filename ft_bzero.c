@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/27 21:59:35 by matmarti         ###   ########.fr       */
+/*   Created: 2021/09/27 21:54:57 by matmarti          #+#    #+#             */
+/*   Updated: 2021/09/27 21:59:29 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
+void	ft_bzero(void *s, size_t n)
+{
+	size_t			i;
+	unsigned char	*str;
 
-int		ft_atoi(const char *str);
-void	*ft_memset(void *b, int c, size_t len);
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(const char *str);
-void	ft_bzero(void *s, size_t n);
-
-#endif
+	i = -1;
+	str = (unsigned char *)s;
+	while (++i < n)
+		str[i] = 0;
+}
