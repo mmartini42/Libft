@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 21:10:24 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/09/30 21:16:07 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
+int		ft_isascii(int c);
 
 #endif
