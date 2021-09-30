@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 14:03:23 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/09/30 14:20:29 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *str, const char *to_find);
 char	*ft_strnstr(const char *str, const char *to_find, size_t len);
+int		ft_strcmp(const char *s1, const char *s2);
 
 #endif
