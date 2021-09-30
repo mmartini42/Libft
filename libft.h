@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 21:19:50 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/09/30 21:25:50 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_toupper(int c);
 
 #endif
