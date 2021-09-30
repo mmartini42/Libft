@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 22:05:21 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/09/30 22:09:00 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,6 @@ void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
+void	ft_strclr(char *s);
 
 #endif
