@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/29 19:06:39 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/09/30 11:48:10 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+char	*ft_strstr(const char *str, const char *to_find);
 
 #endif
