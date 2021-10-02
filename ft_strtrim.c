@@ -6,59 +6,50 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 23:59:05 by matmarti          #+#    #+#             */
-/*   Updated: 2021/10/02 00:55:43 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/10/02 01:57:11 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_get_start(const char *str)
+static short	ft_is_charset(char c, const char *set)
 {
 	size_t	i;
 
 	i = 0;
-	while (str[i])
+	while (set[i])
 	{
-		if (!(str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
-			return (i);
+		if (c == set[i])
+			return (1);
 		i++;
 	}
-	return (-1);
+	return (0);
 }
 
-static int	ft_get_end(const char *str)
+char	*ft_strtrim(char const *s, const char *set)
 {
-	size_t	i;
-
-	i = ft_strlen(str) - 1;
-	while (str[i])
-	{
-		if (!(str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
-			return (i);
-		i--;
-	}
-	return (-1);
-}
-
-char	*ft_strtrim(char const *s)
-{
-	int	start;
-	int	end;
-	int	i;
+	int		end;
+	int		i;
+	int		j;
 	char	*dest;
 
-	start = ft_get_start(s);
-	end = ft_get_end(s);
-	if (end == -1 || start == -1)
+	i = 0;
+	while (s[i] && ft_is_charset(s[i], set))
+		i++;
+	end = ft_strlen(s) - 1;
+	while (s[end] && ft_is_charset(s[end], set))
+		end--;
+	if (i >= end)
 		return (ft_strnew(0));
-	dest = (char *)malloc(sizeof(char) * end - start + 1);
+	dest = (char *)malloc(sizeof(char) * end - i + 1);
 	if (!dest)
 		return (NULL);
-	i = 0;
-	while (start <= end)
+	j = 0;
+	while (i <= end)
 	{
-		dest[i] = s[start];
-		start++;
+		dest[j] = s[i];
+		i++;
+		j++;
 	}
 	return (dest);
 }
