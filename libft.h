@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/10/02 22:50:01 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/10/02 23:08:02 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,6 @@ void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlcpy(char *dest, const char *str, size_t len);
 char	**ft_split(const char *s, char c);
 char	*ft_itoa(int n);
+void	ft_putchar_fd(char c, int fd);
 
 #endif
