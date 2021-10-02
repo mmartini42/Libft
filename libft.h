@@ -6,7 +6,7 @@
 /*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 19:01:33 by matmarti          #+#    #+#             */
-/*   Updated: 2021/10/02 23:20:51 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/10/02 23:22:50 by matmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
