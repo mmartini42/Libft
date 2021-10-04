@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathmart <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 11:38:29 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 11:48:56 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/10/04 01:12:25 by mathmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strstr(const char *str, const char *to_find)
 	size_t	i;
 
 	i = 0;
-	if (!to_find || to_find[0] == '\0')
+	if (to_find[0] == '\0')
 		return ((char *)str);
 	while (str[i])
 	{

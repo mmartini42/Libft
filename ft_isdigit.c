@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathmart <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 21:01:30 by matmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 21:03:12 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/10/04 01:59:14 by mathmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	unsigned char	conv;
-
-	conv = (unsigned char)c;
-	if (conv >= '0' && conv <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

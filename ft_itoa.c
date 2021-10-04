@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matmarti <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mathmart <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/02 22:49:25 by matmarti          #+#    #+#             */
-/*   Updated: 2021/10/02 23:01:52 by matmarti         ###   ########.fr       */
+/*   Updated: 2021/10/04 01:56:29 by mathmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_itoa(int n)
 	size_t	index;
 
 	index = ft_size(n);
-	dest = (char *)malloc(sizeof(char) * index + 1);
+	dest = (char *)malloc(sizeof(char) * index + 2);
 	if (!dest)
 		return (NULL);
 	nb = (long)n;
